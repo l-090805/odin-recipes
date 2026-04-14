@@ -1,0 +1,161 @@
+@keyframes rgb {
+  0% {
+    color: red;
+  }
+  16% {
+    color: orange;
+  }
+  33% {
+    color: yellow;
+  }
+  50% {
+    color: green;
+  }
+  66% {
+    color: blue;
+  }
+  83% {
+    color: purple;
+  }
+  100% {
+    color: red;
+  }
+}
+
+hr.solid {
+  border-top: 1px solid #000000;
+  opacity: 20%;
+}
+
+.LasagnaPage {
+  background-color: rgb(190, 183, 174);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.LasagnaTitle {
+  color: rgb(229, 133, 197);
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.LasagnaTitle:hover {
+  animation: rgb 2s linear infinite;
+}
+
+.LasagnaImg {
+  display: block;
+  margin: 0 auto;
+}
+
+.Description {
+  color: rgb(229, 133, 197);
+}
+
+.Description:hover {
+  animation: rgb 2s linear infinite;
+}
+
+.PrepTable {
+  text-align: center;
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.PrepTable th {
+  background-color: #ffffff;
+  padding: 12px 20px;
+}
+
+.PrepTable td {
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.PrepTable th,
+.PrepTable td {
+  border: 1px solid black;
+}
+
+.IngredientsTitle {
+  color: rgb(229, 133, 197);
+}
+
+.IngredientsTitle:hover {
+  animation: rgb 2s linear infinite;
+}
+
+.IngredientsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.IngredientsList li {
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-left: 4px solid rgb(229, 133, 197);
+  border-right: 4px solid rgb(229, 133, 197);
+  border-radius: 4px;
+}
+
+.IngredientsList li:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: default;
+}
+
+.StepsTitle {
+  color: rgb(229, 133, 197);
+}
+
+.StepsTitle:hover {
+  animation: rgb 2s linear infinite;
+}
+
+.StepsList {
+  list-style: none;
+  padding: 0;
+  width: auto;
+  counter-reset: step;
+}
+
+.StepsList li {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.StepsList li::before {
+  content: counter(step);
+  counter-increment: step;
+  min-width: 30px;
+  height: 30px;
+  background-color: rgb(229, 133, 197);
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.HomeLink {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: rgb(229, 133, 197);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.HomeLink:hover {
+  background-color: rgb(200, 100, 170);
+  cursor: pointer;
+}
